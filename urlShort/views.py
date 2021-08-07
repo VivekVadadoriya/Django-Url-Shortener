@@ -15,7 +15,7 @@ def makeshorturl(request):
         s = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789"
         shorturl = ("".join(random.sample(s, 5)))
         obj = urlModel.objects.create(longurl=longurl, shorturl=shorturl)
-        shorturl = "http://127.0.0.1:8000/" + shorturl
+        shorturl = "https://vurl.herokuapp.com/" + shorturl
         keys = {"shorturl": shorturl, "longurl": longurl}
     return render(request, "shortener.html", keys)
 

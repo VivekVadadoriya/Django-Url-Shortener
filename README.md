@@ -1,4 +1,4 @@
-# Foobar
+# Url Shortener
 
 A Django URL Shortener based on python [V-URL](https://vurl.herokuapp.com/) 
 
